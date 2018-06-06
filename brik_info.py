@@ -36,11 +36,11 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Define constants that should probably be read from environment
 #---------------------------------------------------------------
 
-Login = 'michael.oconnor@rubrik.demo'
+Login = '<username>'
 
-Pass = 'Rubrik123!'
+Pass = '<userpass>'
 
-URL_Base = 'https://172.17.28.18/api/v1/'
+URL_Base = 'https://<IP of brik>/api/v1/'
 
 # Requests Hook function to raise exceptions on HTTP request errors
 
