@@ -73,15 +73,13 @@ def get_brik_info():
     #-------------------------------------------------------------------------
 
     try:
-
         resp = s.post(URL_Base + 'session', verify = False, auth =(Login, Pass), timeout=5)
-
     except requests.exceptions.RequestException as e:
         print ('\n**Request Error (Did you forget to open Lab VPN?):\n' + str(e))
         sys.exit(1)
 
     #-------------------------------------------------------------------------
-    # Requests are working so let's start doing something useful
+    # Request didn't throw an exception so let's start doing something useful.
     # We're now authenticated so update future request headers with Auth Token
     #-------------------------------------------------------------------------
 
