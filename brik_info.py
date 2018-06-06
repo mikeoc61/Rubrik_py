@@ -6,8 +6,8 @@
 + brik_info.py
 +
 + Python3 program to gain experience authenticating to and interacting with
-+ Rubrik Clusters. Authenticates User with Brik and requests basic info which
-+ is then displayed on the console.
++ Rubrik Clusters via REST APIs. Authenticates User with Brik and requests
++ basic info which is then displayed on the console.
 +
 + Developed and tested on:
 +
@@ -66,7 +66,7 @@ def get_brik_info():
     #-------------------------------------------------------------------------
     # Retrieve a session token by authenticating user with Brik and
     # check for errors. On error, terminate program after printng error string.
-    # Eliminates annoying Python Stark Trace output on request failures which
+    # Eliminates annoying Python Stack Trace output on request failures which
     # may simply be due to underlying network connectivity issues. If this 1st
     # attempt to communicate with Brik succeeds, it's likely subsequent
     # requests will as well.
