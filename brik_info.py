@@ -40,7 +40,7 @@ Login = '<username>'
 
 Pass = '<userpass>'
 
-URL_Base = 'https://<IP of brik>/api/v1/'
+URL_Base = 'https://<IP or FQDN of brik>/api/v1/'
 
 # Requests Hook function to raise exceptions on HTTP request errors
 
