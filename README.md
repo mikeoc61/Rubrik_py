@@ -1,9 +1,14 @@
 # Rubrik_py
 
-Repository for Python programs which interact with the Rubrik CDM APIs
+Repository for Python programs which interact with the Rubrik CDM APIs. For more
+information on the API, please see:
+
+- https://<cluster IP or FQDN>/docs/v1/playground/
+
+# Programs
 
   brik_info.py 
-  
+
   - Print basic info about the Rubrik Cluster. Need to provide login credentials and URL of the Cluster.
 
   list_snaps.py
