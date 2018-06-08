@@ -179,6 +179,17 @@ def list_my_snaps():
                         if (sub_key == 'date'):
                             print (' {0}:  {1}:  {2}'.format (item[sub_key], item['id'], item['cloudState']))
 
+    #------------------------------------------------------------------------
+    # All done so close user session and invalidate the session token
+    #------------------------------------------------------------------------
+
+    try:
+        resp = s.delete(URL_Base + 'session/me', verify = False)
+    except requests.exceptions.RequestException as e:
+        print ('\n**Request Error while attempting to close session:\n' + str(e))
+        sys.exit(1)
+
+    sys.exit(0)
 
 # Signal handler for CTRL-C manual termination
 

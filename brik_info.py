@@ -86,7 +86,7 @@ def get_brik_info():
     token = resp.json()
 
     authorization = 'Bearer ' + token['token']
-
+    
     s.headers.update({'Content-Type': 'application/json', 'Authorization': authorization})
 
     #-------------------------------------------------------------------------
