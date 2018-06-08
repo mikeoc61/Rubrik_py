@@ -86,7 +86,7 @@ def get_brik_info():
     token = resp.json()
 
     authorization = 'Bearer ' + token['token']
-    
+
     s.headers.update({'Content-Type': 'application/json', 'Authorization': authorization})
 
     #-------------------------------------------------------------------------
@@ -130,6 +130,17 @@ def get_brik_info():
                         item[sub_key] = '<CERTIFICATE NOT DISPLAYED>'
                     print ('  {0:28}: {1}'.format (sub_key, item[sub_key]))
 
+    #------------------------------------------------------------------------
+    # All done so close user session and invalidate the session token
+    #------------------------------------------------------------------------
+
+    try:
+        resp = s.delete(URL_Base + 'session/me', verify = False)
+    except requests.exceptions.RequestException as e:
+        print ('\n**Request Error while attempting to close session:\n' + str(e))
+        sys.exit(1)
+
+    sys.exit(0)
 
 # Signal handler for CTRL-C manual termination
 
