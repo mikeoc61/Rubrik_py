@@ -6,8 +6,12 @@
 + list_snaps.py
 +
 + Python3 program to gain experience authenticating to and interacting with
-+ Rubrik Clusters via REST APIs. Prompts for a VMware VM name and then lists
-+ general info about the VM and all available snapshots.
++ Rubrik Clusters via REST APIs. Expects to have a VMware VM name (full or
++ partial) as a command line argument and then lists general info about the VM
++ and information on all known snapshots.
++
++ If VM search returns more than one matching VM, user is asked to further
++ restrict the search so there is only one resulting match.
 +
 + Developed and tested on:
 +
