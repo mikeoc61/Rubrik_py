@@ -4,6 +4,7 @@ Repository for Python programs which interact with the Rubrik CDM APIs. For more
 information on the API, please see:
 
 - https://[cluster IP or FQDN]/docs/v1/playground/
+- https://[cluster IP or FQDN]/docs/internal/playground/
 
 # Programs
 
