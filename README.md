@@ -19,9 +19,10 @@ information on the API, please see:
 
 # Requirements
 
-Python3
+Python3 including requests
 
 > $ brew install python3
+> $ pip install requests
 
 # Tested with
 
