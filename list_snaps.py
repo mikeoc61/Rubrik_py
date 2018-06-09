@@ -143,8 +143,8 @@ def list_my_snaps():
                     print ('-' * 92)
 
     #------------------------------------------------------------------------
-    # At this point, we only able to check for snapshots associated with
-    # a single VM so bail with apology and request to refine search
+    # At this point, we're only able to check for snapshots associated with
+    # a single VM. If more than 1, bail with request to further refine search
     #------------------------------------------------------------------------
 
     if (total != 1):
